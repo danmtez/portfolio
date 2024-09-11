@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <style>
+        /* Some basic styling for better presentation */
+        .team-members-container {
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            max-width: 800px; /* Adjust as needed */
+            margin: 0 auto;
+        }
+        .team-member {
+            text-align: center;
+            flex: 0 0 calc(20% - 20px); /* Adjust width as needed */
+            margin: 10px;
+            opacity: 0; /* Initially hide team members */
+            transition: opacity 0.5s ease; /* Smooth transition effect */
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        /* CSS animation for fading in team members */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* Apply animation to each team member */
+        .team-member:nth-child(1) { animation: fadeIn 1s ease 0s 1 normal forwards; }
+        .team-member:nth-child(2) { animation: fadeIn 1s ease 1s 1 normal forwards; }
+        .team-member:nth-child(3) { animation: fadeIn 1s ease 2s 1 normal forwards; }
+        .team-member:nth-child(4) { animation: fadeIn 1s ease 3s 1 normal forwards; }
+        .team-member:nth-child(5) { animation: fadeIn 1s ease 4s 1 normal forwards; }
+    </style>
+</head>
+<body>
+
+<h1>Our Team</h1>
+
+<div class="team-members-container">
+    <!-- Team Member 1 -->
+    <div class="team-member">
+        <img src="team_member1.jpg" alt="Team Member 1">
+        <h2>John Doe</h2>
+    </div>
+
+    <!-- Team Member 2 -->
+    <div class="team-member">
+        <img src="team_member2.jpg" alt="Team Member 2">
+        <h2>Jane Smith</h2>
+    </div>
+
+    <!-- Team Member 3 -->
+    <div class="team-member">
+        <img src="team_member3.jpg" alt="Team Member 3">
+        <h2>Emily Brown</h2>
+    </div>
+
+    <!-- Team Member 4 -->
+    <div class="team-member">
+        <img src="team_member4.jpg" alt="Team Member 4">
+        <h2>Michael Johnson</h2>
+    </div>
+
+    <!-- Team Member 5 -->
+    <div class="team-member">
+        <img src="team_member5.jpg" alt="Team Member 5">
+        <h2>David Wilson</h2>
+    </div>
+</div>
+
+</body>
+</html>
